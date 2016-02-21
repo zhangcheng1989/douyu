@@ -7,14 +7,15 @@
 //
 
 #import "ZCRecommendViewController.h"
-#import "ZCHomeHttp.h"
 #import "Masonry.h"
 #import "ZCHomeHeader.h"
 #import "ZCHomeBody.h"
+#import "ZCScrollerView.h"
+#import "ZCHomeTool.h"
 @interface ZCRecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)NSMutableArray *items;
 @property(nonatomic,weak)UITableView *tableView;
-@property(nonatomic,weak)ZCHomeHeader *header;
+@property(nonatomic,weak)ZCScrollerView *header;
 @end
 
 
@@ -54,7 +55,7 @@
 }
 
 - (void)setUpHeaderView{
-    ZCHomeHeader *header = [ZCHomeHeader new];
+    ZCScrollerView *header = [ZCScrollerView new];
     [self.view addSubview:header];
     self.header = header;
     [header mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -67,10 +68,11 @@
 
 
 - (void)loadData{
-    [ZCHomeHttp slider:^(NSArray *result) {
-        self.header.imageURLStringsGroup = result;
-    } failure:^(NSError *error) {
-        NSLog(@"%@",error);
+    
+    [ZCHomeTool hoemSilder:^(NSArray *silders) {
+//        self.header.titles = silders[0];
+//        self.header.images = silders[1];
+        self.header.images = silders;
     }];
 
 }

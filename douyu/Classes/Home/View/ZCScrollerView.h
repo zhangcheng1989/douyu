@@ -14,6 +14,6 @@
 @property(nonatomic,strong)NSArray *images;
 @property(nonatomic,strong)NSArray *titles;
 
-
+- (void)clearCache;
 
 @end

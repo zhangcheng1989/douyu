@@ -7,14 +7,20 @@
 //
 
 #import "ZCScrollerView.h"
-
+#import "NSData+ZCSDDataCache.h"
+#import "ZCSliderCell.h"
+#import "ZCSilderModel.h"
+#import "UIImageView+WebCache.h"
 @interface ZCScrollerView()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,weak)UICollectionViewFlowLayout *layout;
 @property(nonatomic,weak)UICollectionView *collectionView;
 @property(nonatomic,assign)NSInteger totalPageCount;
 @end
 
+static NSString *ID = @"slider";
+
 @implementation ZCScrollerView
+
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]) {
@@ -33,8 +39,7 @@
 
 - (void)setImages:(NSArray *)images{
     _images = images;
-    
-    
+    [_collectionView reloadData];
 }
 
 
@@ -51,11 +56,17 @@
     collectionView.pagingEnabled = YES;
     collectionView.showsHorizontalScrollIndicator = NO;
     collectionView.showsVerticalScrollIndicator = NO;
-//    [collectionView registerClass:[SDCollectionViewCell class] forCellWithReuseIdentifier:ID];
+    [collectionView registerClass:[ZCSliderCell class] forCellWithReuseIdentifier:ID];
     collectionView.dataSource = self;
     collectionView.delegate = self;
     [self addSubview:collectionView];
     _collectionView = collectionView;
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    _layout.itemSize = self.frame.size;
+    _collectionView.frame = self.bounds;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -63,14 +74,17 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    ZCSliderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    ZCSilderModel *model = self.images[indexPath.item];
+    for (NSInteger i=0; i<self.images.count; i++) {
+        [cell.imageView sd_setImageWithURL:model.pic_url];
+    }
+    cell.title = model.title;
+    return cell;
 }
 
-
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    _layout.itemSize = self.frame.size;
-    _collectionView.frame = self.bounds;
+- (void)clearCache{
+    [NSData clearCache];
 }
 
 @end

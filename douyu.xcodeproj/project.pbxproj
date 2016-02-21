@@ -24,7 +24,6 @@
 		375A8D9E1C5902D30005499C /* UIView+ZCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A8D9D1C5902D30005499C /* UIView+ZCExtension.m */; };
 		375A8DA11C5905590005499C /* ZCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A8DA01C5905590005499C /* ZCTabBarButton.m */; };
 		3775B69F1C6627C1006AB3B8 /* ZCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B69E1C6627C1006AB3B8 /* ZCRecommendViewController.m */; };
-		3775B6A91C662C26006AB3B8 /* ZCHomeHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B6A81C662C26006AB3B8 /* ZCHomeHttp.m */; };
 		3775B6AD1C662DA8006AB3B8 /* ZCSliderResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B6AC1C662DA8006AB3B8 /* ZCSliderResult.m */; };
 		3775B6B01C662DF3006AB3B8 /* ZCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B6AF1C662DF3006AB3B8 /* ZCRoom.m */; };
 		3787C2AB1C70B76F001AEBA5 /* ZCHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C2AA1C70B76F001AEBA5 /* ZCHomeHeader.m */; };
@@ -45,12 +44,12 @@
 		37F7DD291C7A181A00B23565 /* ZCSilderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7DD281C7A181A00B23565 /* ZCSilderModel.m */; };
 		37F7DD2C1C7A185F00B23565 /* ZCRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7DD2B1C7A185F00B23565 /* ZCRoomModel.m */; };
 		37F7DD2F1C7A1C6C00B23565 /* ZCScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7DD2E1C7A1C6C00B23565 /* ZCScrollerView.m */; };
+		37F7DD321C7A293400B23565 /* ZCSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7DD311C7A293400B23565 /* ZCSliderCell.m */; };
 		37F966C31C79D55600C061C2 /* ZCHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F966C21C79D55600C061C2 /* ZCHttpTool.m */; };
 		37FEE7E91C5DF56C002DB686 /* ZCSweepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7E81C5DF56C002DB686 /* ZCSweepViewController.m */; };
 		37FEE7EC1C5DFFB2002DB686 /* ZCSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7EB1C5DFFB2002DB686 /* ZCSearchBar.m */; };
 		37FEE7EF1C5E2EFE002DB686 /* ZCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7EE1C5E2EFE002DB686 /* ZCHeaderView.m */; };
 		37FEE7F41C5E3B13002DB686 /* ZCDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7F31C5E3B13002DB686 /* ZCDBTool.m */; };
-		37FEE7F91C5E541B002DB686 /* ZCAFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7F81C5E541B002DB686 /* ZCAFNManager.m */; };
 		37FEE7FD1C5E580F002DB686 /* ZCSearchHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE7FC1C5E580F002DB686 /* ZCSearchHttp.m */; };
 		37FEE8031C5E5BC5002DB686 /* ZCSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE8021C5E5BC5002DB686 /* ZCSearch.m */; };
 		37FEE8061C5E5BFA002DB686 /* ZCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FEE8051C5E5BFA002DB686 /* ZCData.m */; };
@@ -92,8 +91,6 @@
 		375A8DA21C59083E0005499C /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		3775B69D1C6627C1006AB3B8 /* ZCRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRecommendViewController.h; sourceTree = "<group>"; };
 		3775B69E1C6627C1006AB3B8 /* ZCRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRecommendViewController.m; sourceTree = "<group>"; };
-		3775B6A71C662C26006AB3B8 /* ZCHomeHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeHttp.h; sourceTree = "<group>"; };
-		3775B6A81C662C26006AB3B8 /* ZCHomeHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeHttp.m; sourceTree = "<group>"; };
 		3775B6AB1C662DA8006AB3B8 /* ZCSliderResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSliderResult.h; sourceTree = "<group>"; };
 		3775B6AC1C662DA8006AB3B8 /* ZCSliderResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSliderResult.m; sourceTree = "<group>"; };
 		3775B6AE1C662DF3006AB3B8 /* ZCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRoom.h; sourceTree = "<group>"; };
@@ -122,20 +119,22 @@
 		37F3EE731C5D089B00E42DEA /* UIBarButtonItem+ZCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZCExtension.m"; sourceTree = "<group>"; };
 		37F3EE791C5D0C7400E42DEA /* ZCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchViewController.h; sourceTree = "<group>"; };
 		37F3EE7A1C5D0C7400E42DEA /* ZCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSearchViewController.m; sourceTree = "<group>"; };
-		37F7DD1E1C7A153200B23565 /* ZCHomeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeTool.h; sourceTree = "<group>"; };
-		37F7DD1F1C7A153200B23565 /* ZCHomeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeTool.m; sourceTree = "<group>"; };
+		37F7DD1E1C7A153200B23565 /* ZCHomeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHomeTool.h; path = ../ZCHomeTool.h; sourceTree = "<group>"; };
+		37F7DD1F1C7A153200B23565 /* ZCHomeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCHomeTool.m; path = ../ZCHomeTool.m; sourceTree = "<group>"; };
 		37F7DD211C7A16A900B23565 /* ZCHomeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeResult.h; sourceTree = "<group>"; };
 		37F7DD221C7A16A900B23565 /* ZCHomeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeResult.m; sourceTree = "<group>"; };
-		37F7DD241C7A176200B23565 /* ZCBaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCBaseResult.h; sourceTree = "<group>"; };
-		37F7DD251C7A176200B23565 /* ZCBaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCBaseResult.m; sourceTree = "<group>"; };
+		37F7DD241C7A176200B23565 /* ZCBaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCBaseResult.h; path = ../../Home/Result/ZCBaseResult.h; sourceTree = "<group>"; };
+		37F7DD251C7A176200B23565 /* ZCBaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCBaseResult.m; path = ../../Home/Result/ZCBaseResult.m; sourceTree = "<group>"; };
 		37F7DD271C7A181A00B23565 /* ZCSilderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSilderModel.h; sourceTree = "<group>"; };
 		37F7DD281C7A181A00B23565 /* ZCSilderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSilderModel.m; sourceTree = "<group>"; };
 		37F7DD2A1C7A185F00B23565 /* ZCRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRoomModel.h; sourceTree = "<group>"; };
 		37F7DD2B1C7A185F00B23565 /* ZCRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRoomModel.m; sourceTree = "<group>"; };
 		37F7DD2D1C7A1C6C00B23565 /* ZCScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScrollerView.h; sourceTree = "<group>"; };
 		37F7DD2E1C7A1C6C00B23565 /* ZCScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScrollerView.m; sourceTree = "<group>"; };
-		37F966C11C79D55600C061C2 /* ZCHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHttpTool.h; sourceTree = "<group>"; };
-		37F966C21C79D55600C061C2 /* ZCHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHttpTool.m; sourceTree = "<group>"; };
+		37F7DD301C7A293400B23565 /* ZCSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSliderCell.h; sourceTree = "<group>"; };
+		37F7DD311C7A293400B23565 /* ZCSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSliderCell.m; sourceTree = "<group>"; };
+		37F966C11C79D55600C061C2 /* ZCHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCHttpTool.h; path = ../ZCHttpTool.h; sourceTree = "<group>"; };
+		37F966C21C79D55600C061C2 /* ZCHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCHttpTool.m; path = ../ZCHttpTool.m; sourceTree = "<group>"; };
 		37FEE7E71C5DF56C002DB686 /* ZCSweepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSweepViewController.h; sourceTree = "<group>"; };
 		37FEE7E81C5DF56C002DB686 /* ZCSweepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSweepViewController.m; sourceTree = "<group>"; };
 		37FEE7EA1C5DFFB2002DB686 /* ZCSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchBar.h; sourceTree = "<group>"; };
@@ -144,8 +143,6 @@
 		37FEE7EE1C5E2EFE002DB686 /* ZCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHeaderView.m; sourceTree = "<group>"; };
 		37FEE7F21C5E3B13002DB686 /* ZCDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDBTool.h; sourceTree = "<group>"; };
 		37FEE7F31C5E3B13002DB686 /* ZCDBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDBTool.m; sourceTree = "<group>"; };
-		37FEE7F71C5E541B002DB686 /* ZCAFNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAFNManager.h; sourceTree = "<group>"; };
-		37FEE7F81C5E541B002DB686 /* ZCAFNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAFNManager.m; sourceTree = "<group>"; };
 		37FEE7FB1C5E580F002DB686 /* ZCSearchHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchHttp.h; sourceTree = "<group>"; };
 		37FEE7FC1C5E580F002DB686 /* ZCSearchHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSearchHttp.m; sourceTree = "<group>"; };
 		37FEE8011C5E5BC5002DB686 /* ZCSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearch.h; sourceTree = "<group>"; };
@@ -325,6 +322,8 @@
 				375584581C74C488006B8BB3 /* ZCRecommCell.m */,
 				37F7DD2D1C7A1C6C00B23565 /* ZCScrollerView.h */,
 				37F7DD2E1C7A1C6C00B23565 /* ZCScrollerView.m */,
+				37F7DD301C7A293400B23565 /* ZCSliderCell.h */,
+				37F7DD311C7A293400B23565 /* ZCSliderCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,9 +454,9 @@
 		3775B6A31C662AB3006AB3B8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				37F7DD1E1C7A153200B23565 /* ZCHomeTool.h */,
+				37F7DD1F1C7A153200B23565 /* ZCHomeTool.m */,
 				3775B6AA1C662D96006AB3B8 /* Result */,
-				3775B6A71C662C26006AB3B8 /* ZCHomeHttp.h */,
-				3775B6A81C662C26006AB3B8 /* ZCHomeHttp.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -471,8 +470,6 @@
 				3775B6AF1C662DF3006AB3B8 /* ZCRoom.m */,
 				37F7DD211C7A16A900B23565 /* ZCHomeResult.h */,
 				37F7DD221C7A16A900B23565 /* ZCHomeResult.m */,
-				37F7DD241C7A176200B23565 /* ZCBaseResult.h */,
-				37F7DD251C7A176200B23565 /* ZCBaseResult.m */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -562,6 +559,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		37F7DD331C7A307700B23565 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				37F7DD241C7A176200B23565 /* ZCBaseResult.h */,
+				37F7DD251C7A176200B23565 /* ZCBaseResult.m */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		37FEE7F01C5E3ACC002DB686 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,10 +592,6 @@
 				3775B6A31C662AB3006AB3B8 /* Home */,
 				37FEE7FA1C5E56D5002DB686 /* Search */,
 				37FEE7F61C5E536E002DB686 /* Base */,
-				37F966C11C79D55600C061C2 /* ZCHttpTool.h */,
-				37F966C21C79D55600C061C2 /* ZCHttpTool.m */,
-				37F7DD1E1C7A153200B23565 /* ZCHomeTool.h */,
-				37F7DD1F1C7A153200B23565 /* ZCHomeTool.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -597,8 +599,9 @@
 		37FEE7F61C5E536E002DB686 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				37FEE7F71C5E541B002DB686 /* ZCAFNManager.h */,
-				37FEE7F81C5E541B002DB686 /* ZCAFNManager.m */,
+				37F7DD331C7A307700B23565 /* Result */,
+				37F966C11C79D55600C061C2 /* ZCHttpTool.h */,
+				37F966C21C79D55600C061C2 /* ZCHttpTool.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -747,7 +750,6 @@
 				37F7DD2F1C7A1C6C00B23565 /* ZCScrollerView.m in Sources */,
 				37ED14C81C776B680035B1F1 /* NSData+ZCSDDataCache.m in Sources */,
 				375A8D981C5902040005499C /* ZCNavigationController.m in Sources */,
-				37FEE7F91C5E541B002DB686 /* ZCAFNManager.m in Sources */,
 				37FEE7E91C5DF56C002DB686 /* ZCSweepViewController.m in Sources */,
 				37FEE7FD1C5E580F002DB686 /* ZCSearchHttp.m in Sources */,
 				37B3A9CC1C6478F700611934 /* ZCSliderScrollerView.m in Sources */,
@@ -764,6 +766,7 @@
 				372095DC1C5A5211000EA6B7 /* ZCMineViewController.m in Sources */,
 				375A8DA11C5905590005499C /* ZCTabBarButton.m in Sources */,
 				37F7DD2C1C7A185F00B23565 /* ZCRoomModel.m in Sources */,
+				37F7DD321C7A293400B23565 /* ZCSliderCell.m in Sources */,
 				372095E31C5A5296000EA6B7 /* ZCHomeViewController.m in Sources */,
 				37FEE7EC1C5DFFB2002DB686 /* ZCSearchBar.m in Sources */,
 				375A8D781C5900D70005499C /* AppDelegate.m in Sources */,
@@ -776,7 +779,6 @@
 				37F966C31C79D55600C061C2 /* ZCHttpTool.m in Sources */,
 				37FEE7F41C5E3B13002DB686 /* ZCDBTool.m in Sources */,
 				3787C2AB1C70B76F001AEBA5 /* ZCHomeHeader.m in Sources */,
-				3775B6A91C662C26006AB3B8 /* ZCHomeHttp.m in Sources */,
 				375A8D751C5900D70005499C /* main.m in Sources */,
 				375584591C74C488006B8BB3 /* ZCRecommCell.m in Sources */,
 				372095C41C5A4CB4000EA6B7 /* ZCTabBar.m in Sources */,
