@@ -14,11 +14,20 @@
 #import "ZCRecommendViewController.h"
 #import "ZCTwoViewController.h"
 #import "Masonry.h"
+#import "ZCHomeTool.h"
 @interface ZCHomeViewController ()
-
+@property(nonatomic,strong)NSArray *titles;
 @end
 
 @implementation ZCHomeViewController
+
+- (NSArray *)titles{
+    if (_titles == nil) {
+        _titles = [NSArray arrayWithObjects:@"推荐",@"游戏",@"娱乐",@"奇葩", nil];
+    }
+    return _titles;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

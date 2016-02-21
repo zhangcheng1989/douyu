@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ZCHomeHeader : UIView
-@property(nonatomic,strong)NSArray *items;
+
+
+@property (nonatomic, strong) NSArray *imageURLStringsGroup;
+
 @end
