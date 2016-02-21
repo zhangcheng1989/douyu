@@ -79,6 +79,7 @@ static NSString *ID = @"slider";
     for (NSInteger i=0; i<self.images.count; i++) {
         [cell.imageView sd_setImageWithURL:model.pic_url];
     }
+    
     cell.title = model.title;
     return cell;
 }
