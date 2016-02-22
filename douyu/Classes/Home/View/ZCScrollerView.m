@@ -15,12 +15,20 @@
 @property(nonatomic,weak)UICollectionViewFlowLayout *layout;
 @property(nonatomic,weak)UICollectionView *collectionView;
 @property(nonatomic,assign)NSInteger totalPageCount;
+@property(nonatomic,strong)NSMutableArray *cacheImages;
+
 @end
 
 static NSString *ID = @"slider";
 
 @implementation ZCScrollerView
 
+- (NSMutableArray *)cacheImages{
+    if (_cacheImages == nil) {
+        _cacheImages = [NSMutableArray array];
+    }
+    return _cacheImages;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]) {
@@ -39,9 +47,46 @@ static NSString *ID = @"slider";
 
 - (void)setImages:(NSArray *)images{
     _images = images;
-    [_collectionView reloadData];
+    NSMutableArray *arrM = [NSMutableArray arrayWithCapacity:images.count];
+    for (NSInteger i=0; i<images.count; i++) {
+        UIImage *image = [[UIImage alloc]init];
+        [arrM addObject:image];
+    }
+    self.cacheImages = arrM;
+    [self loadImageWithImageURLsGroup:images];
+//    [_collectionView reloadData];
 }
 
+- (void)loadImageWithImageURLsGroup:(NSArray *)imgArr{
+    for (int i = 0; i < imgArr.count; i++) {
+        [self loadImageAtIndex:i];
+    }
+}
+
+- (void)loadImageAtIndex:(NSInteger)index{
+    NSString *urlStr = self.images[index];
+    
+    
+    NSData *data = [NSData getDataCacheWithIdentifier:urlStr];
+
+    if (data) {
+        [self.cacheImages setObject:[UIImage imageWithData:data] atIndexedSubscript:index];
+        [self.collectionView reloadData];
+    }else{
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            UIImage *image = [UIImage imageWithData:data];
+            [self.cacheImages setObject:image atIndexedSubscript:index];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (index==0) {
+                    [_collectionView reloadData];
+                }
+            });
+            [data saveDataCacheWithIdentifier:urlStr];
+        }];
+        [task resume];
+    }
+}
 
 - (void)setUpView{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
@@ -75,12 +120,12 @@ static NSString *ID = @"slider";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ZCSliderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-    ZCSilderModel *model = self.images[indexPath.item];
-    for (NSInteger i=0; i<self.images.count; i++) {
-        [cell.imageView sd_setImageWithURL:model.pic_url];
+    long itemIndex = indexPath.item % self.cacheImages.count;
+    UIImage *image = self.cacheImages[itemIndex];
+    cell.imageView.image = image;
+    if (_titles) {
+        cell.title = _titles[itemIndex];
     }
-    
-    cell.title = model.title;
     return cell;
 }
 

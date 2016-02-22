@@ -23,14 +23,15 @@
         }else{
             ZCHomeResult *result = [ZCHomeResult mj_objectWithKeyValues:responseObject];
             if ([result.error isEqualToString:@"0"]) {
-                NSMutableArray *arrM = [NSMutableArray array];
+                NSMutableArray *titles = [NSMutableArray array];
+                NSMutableArray *images = [NSMutableArray array];
                 [result.data enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                     ZCSilderModel *model = (ZCSilderModel *)obj;
-//                    [titles addObject:model.title];
-//                    [images addObject:model.pic_url];
-                    [arrM addObject:model];
+                    [titles addObject:model.title];
+                    [images addObject:model.pic_url];
+//                    [arrM addObject:model];
                 }];
-                success(arrM);
+                success(@[titles,images]);
             }else{
                 NSLog(@"%@",result.error);
             }

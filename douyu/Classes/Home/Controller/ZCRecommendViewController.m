@@ -63,16 +63,15 @@
         make.size.mas_equalTo(CGSizeMake(self.view.width, 150));
     }];
     self.tableView.tableHeaderView = header;
-    
 }
 
 
 - (void)loadData{
     
     [ZCHomeTool hoemSilder:^(NSArray *silders) {
-//        self.header.titles = silders[0];
-//        self.header.images = silders[1];
-        self.header.images = silders;
+        self.header.titles = silders[0];
+        self.header.images = silders[1];
+//        self.header.images = silders;
     }];
 
 }

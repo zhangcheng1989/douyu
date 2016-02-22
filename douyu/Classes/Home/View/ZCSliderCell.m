@@ -39,6 +39,7 @@
     return _lb_title;
 }
 
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     _imageView.frame = self.bounds;

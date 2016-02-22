@@ -10,7 +10,6 @@
 
 @interface ZCScrollerView : UIView
 
-@property(nonatomic,strong)NSArray *cacheImages;
 @property(nonatomic,strong)NSArray *images;
 @property(nonatomic,strong)NSArray *titles;
 

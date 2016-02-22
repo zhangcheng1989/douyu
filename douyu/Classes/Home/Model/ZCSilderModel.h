@@ -11,6 +11,6 @@
 @interface ZCSilderModel : NSObject
 @property(nonatomic,copy)NSString *ID;
 @property(nonatomic,copy)NSString *title;
-@property(nonatomic,copy)NSURL *pic_url;
+@property(nonatomic,copy)NSString *pic_url;
 @property(nonatomic,strong)ZCRoomModel *room;
 @end
