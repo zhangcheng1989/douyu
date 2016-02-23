@@ -17,7 +17,6 @@
 - (UIImageView *)imageView{
     if (_imageView == nil) {
         UIImageView *imageView = [UIImageView new];
-        
         [self.contentView addSubview:imageView];
         _imageView = imageView;
     }
@@ -29,10 +28,15 @@
     self.lb_title.text = [NSString stringWithFormat:@"   %@",title];
 }
 
+
 - (UILabel *)lb_title{
     if (_lb_title == nil) {
         UILabel *lable = [UILabel new];
+        lable.textColor = [UIColor whiteColor];
+        lable.alpha = 8;
+        lable.backgroundColor = [UIColor blackColor];
         lable.hidden = YES;
+        [lable.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20.0f]}];
         [self.contentView addSubview:lable];
         _lb_title = lable;
     }
@@ -48,6 +52,7 @@
     CGFloat titleLabelH = 30;
     CGFloat titleLabelX = 0;
     CGFloat titleLabelY = self.height - titleLabelH;
+    
     _lb_title.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
     _lb_title.hidden = !_lb_title.text;
 }

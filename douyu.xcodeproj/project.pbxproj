@@ -26,8 +26,6 @@
 		3775B69F1C6627C1006AB3B8 /* ZCRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B69E1C6627C1006AB3B8 /* ZCRecommendViewController.m */; };
 		3775B6AD1C662DA8006AB3B8 /* ZCSliderResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B6AC1C662DA8006AB3B8 /* ZCSliderResult.m */; };
 		3775B6B01C662DF3006AB3B8 /* ZCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3775B6AF1C662DF3006AB3B8 /* ZCRoom.m */; };
-		3787C2AB1C70B76F001AEBA5 /* ZCHomeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C2AA1C70B76F001AEBA5 /* ZCHomeHeader.m */; };
-		3787C2AE1C70B8B5001AEBA5 /* ZCHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C2AD1C70B8B5001AEBA5 /* ZCHomeCell.m */; };
 		3787C2B11C70D332001AEBA5 /* ZCHomeBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C2B01C70D332001AEBA5 /* ZCHomeBody.m */; };
 		3794F8AB1C60F444004EA417 /* ZCNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3794F8AA1C60F444004EA417 /* ZCNotesViewController.m */; };
 		37B3A9C91C64777900611934 /* ZCSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3A9C81C64777900611934 /* ZCSliderView.m */; };
@@ -95,10 +93,6 @@
 		3775B6AC1C662DA8006AB3B8 /* ZCSliderResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSliderResult.m; sourceTree = "<group>"; };
 		3775B6AE1C662DF3006AB3B8 /* ZCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRoom.h; sourceTree = "<group>"; };
 		3775B6AF1C662DF3006AB3B8 /* ZCRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRoom.m; sourceTree = "<group>"; };
-		3787C2A91C70B76F001AEBA5 /* ZCHomeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeHeader.h; sourceTree = "<group>"; };
-		3787C2AA1C70B76F001AEBA5 /* ZCHomeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeHeader.m; sourceTree = "<group>"; };
-		3787C2AC1C70B8B5001AEBA5 /* ZCHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeCell.h; sourceTree = "<group>"; };
-		3787C2AD1C70B8B5001AEBA5 /* ZCHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeCell.m; sourceTree = "<group>"; };
 		3787C2AF1C70D332001AEBA5 /* ZCHomeBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCHomeBody.h; sourceTree = "<group>"; };
 		3787C2B01C70D332001AEBA5 /* ZCHomeBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCHomeBody.m; sourceTree = "<group>"; };
 		3794F8A91C60F444004EA417 /* ZCNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNotesViewController.h; sourceTree = "<group>"; };
@@ -312,10 +306,6 @@
 				37B3A9C81C64777900611934 /* ZCSliderView.m */,
 				37B3A9CA1C6478F700611934 /* ZCSliderScrollerView.h */,
 				37B3A9CB1C6478F700611934 /* ZCSliderScrollerView.m */,
-				3787C2A91C70B76F001AEBA5 /* ZCHomeHeader.h */,
-				3787C2AA1C70B76F001AEBA5 /* ZCHomeHeader.m */,
-				3787C2AC1C70B8B5001AEBA5 /* ZCHomeCell.h */,
-				3787C2AD1C70B8B5001AEBA5 /* ZCHomeCell.m */,
 				3787C2AF1C70D332001AEBA5 /* ZCHomeBody.h */,
 				3787C2B01C70D332001AEBA5 /* ZCHomeBody.m */,
 				375584571C74C488006B8BB3 /* ZCRecommCell.h */,
@@ -778,11 +768,9 @@
 				37BCAE541C78A4D3007D2D77 /* NSString+ZCNowDate.m in Sources */,
 				37F966C31C79D55600C061C2 /* ZCHttpTool.m in Sources */,
 				37FEE7F41C5E3B13002DB686 /* ZCDBTool.m in Sources */,
-				3787C2AB1C70B76F001AEBA5 /* ZCHomeHeader.m in Sources */,
 				375A8D751C5900D70005499C /* main.m in Sources */,
 				375584591C74C488006B8BB3 /* ZCRecommCell.m in Sources */,
 				372095C41C5A4CB4000EA6B7 /* ZCTabBar.m in Sources */,
-				3787C2AE1C70B8B5001AEBA5 /* ZCHomeCell.m in Sources */,
 				37B3A9E11C64CB9200611934 /* ZCTwoViewController.m in Sources */,
 				3775B6B01C662DF3006AB3B8 /* ZCRoom.m in Sources */,
 				37FEE7EF1C5E2EFE002DB686 /* ZCHeaderView.m in Sources */,
